@@ -1,0 +1,154 @@
+:root {
+
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+html {
+	height: 100%;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Fonts */
+@font-face {
+    font-family: Virgo;
+    src: url('fonts/Virgo/virgo.eot');
+    src: url('fonts/Virgo/virgo.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Virgo/virgo.woff2') format('woff2'),
+         url('fonts/Virgo/virgo.woff') format('woff'),
+         url('fonts/Virgo/virgo.ttf') format('truetype'),
+         url('fonts/Virgo/virgo.svg#Virgo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SegoeWP;
+    src: url('fonts/SegoeWP/SegoeWP-Light.eot');
+    src: url('fonts/SegoeWP/SegoeWP-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/SegoeWP/SegoeWP-Light.woff2') format('woff2'),
+        url('fonts/SegoeWP/SegoeWP-Light.woff') format('woff'),
+        url('fonts/SegoeWP/SegoeWP-Light.ttf') format('truetype'),
+        url('fonts/SegoeWP/SegoeWP-Light.svg#SegoeWP') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Main Styles */
+body {
+	background: url('../images/bg.jpg') no-repeat top center;
+	background-size: cover;
+	font-family: SegoeWP, sans-serif;
+	color: #fff;
+}
+
+.container {
+	width: 700px;
+	margin: 0 auto;
+	padding: 1px 20px 0;
+}
+
+.error-number {
+	font: 181px Virgo, fantasy;
+	text-align: center;
+	margin: 135px 0 10px;
+}
+
+.error-title {
+	font-size: 31px;
+	line-height: 35px;
+	background: url('../images/error.png') no-repeat left center;
+	padding-left: 40px;
+	margin-bottom: 65px;
+}
+
+.copyright {
+	font-size: 17px;
+	color: rgba(255, 255, 255, .2);
+	text-align: center;
+	padding: 38px 0 30px;
+}
+
+.error-form {
+	background: rgba(255, 255, 255, .23);
+	border: 6px solid rgba(0, 0, 0, .2);
+	border-radius: 10px;
+	padding: 31px 60px 24px;
+	position: relative;
+	margin: 132px auto 0;
+	text-align: center;
+	width: 83%;
+}
+
+.error-form::before {
+	content: '';
+	width: 100%;
+	height: 91px;
+	position: absolute;
+	left: 0;
+	top: -70px;
+	background: url('../images/lines.png') no-repeat top center;
+}
+
+.error-form__title {
+	font-size: 23px;
+	margin-bottom: 17px;
+}
+
+.error-form__title a {
+	font-weight: 700;
+	color: #fff;
+}
+
+.error-form__title a:hover {
+	color: #2d283c;
+}
+
+.error-form__search {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40px;
+	height: 100%;
+	background: url('../images/search.png') no-repeat center;
+	cursor: pointer;
+}
+
+.field {
+	border-radius: 3px;
+	background: #fff;
+	font: 17px SegoeWP, sans-serif;
+	color: #a5a5a5;
+	padding: 8px 50px 8px 15px;
+	box-shadow: inset 1px 0 3px 0 rgba(0, 0, 0, .3);
+	width: 100%;
+}
+
+.error-form__field-wrap {
+	position: relative;
+}
